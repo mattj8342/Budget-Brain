@@ -1,0 +1,20 @@
+{
+  "name": "budget-brain-cloud-run",
+  "version": "0.9.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test target-semantics.test.mjs test.mjs write-gate.test.mjs allocation.test.mjs paycheck.test.mjs allocation-history.test.mjs diagnostics.test.mjs transaction-batch.test.mjs impacts.test.mjs impact-service.test.mjs sustainability.test.mjs",
+    "demo": "node demo.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@maro-org/ynab-mcp": "0.8.0",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "jose": "6.2.13",
+    "zod": "4.6.7"
+  }
+}

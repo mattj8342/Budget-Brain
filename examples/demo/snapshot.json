@@ -1,0 +1,183 @@
+{
+  "budget_id": "00000001-0000-4000-8000-000000000001",
+  "month": "2027-04-01",
+  "as_of": "2027-04-10",
+  "captured_at": "2027-04-10T12:00:00Z",
+  "server_knowledge": 1,
+  "ready_to_assign": 1150000,
+  "categories": [
+    {
+      "id": "00000020-0000-4000-8000-000000000020",
+      "name": "Rent",
+      "category_group_id": "00000100-0000-4000-8000-000000000100",
+      "category_group_name": "Monthly",
+      "budgeted": 600000,
+      "balance": 600000,
+      "goal_type": "NEED",
+      "goal_target": 1300000,
+      "goal_cadence": 1,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": false,
+      "goal_under_funded": 700000,
+      "goal_target_date": "2027-04-15"
+    },
+    {
+      "id": "00000021-0000-4000-8000-000000000021",
+      "name": "Annual bill",
+      "category_group_id": "00000101-0000-4000-8000-000000000101",
+      "category_group_name": "Annual",
+      "budgeted": 110000,
+      "balance": 110000,
+      "goal_type": "NEED",
+      "goal_target": 210000,
+      "goal_cadence": 13,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": true,
+      "goal_under_funded": 100000,
+      "goal_target_date": "2027-04-20"
+    },
+    {
+      "id": "00000010-0000-4000-8000-000000000010",
+      "name": "Groceries",
+      "category_group_id": "00000102-0000-4000-8000-000000000102",
+      "category_group_name": "Essentials",
+      "budgeted": 40000,
+      "balance": 40000,
+      "goal_type": "NEED",
+      "goal_target": 80000,
+      "goal_cadence": 2,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": false,
+      "goal_under_funded": 230000
+    },
+    {
+      "id": "00000011-0000-4000-8000-000000000011",
+      "name": "Therapy",
+      "category_group_id": "00000102-0000-4000-8000-000000000102",
+      "category_group_name": "Essentials",
+      "budgeted": 70000,
+      "balance": 70000,
+      "goal_type": "NEED",
+      "goal_target": 25000,
+      "goal_cadence": 2,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": true,
+      "goal_under_funded": 80000
+    },
+    {
+      "id": "00000012-0000-4000-8000-000000000012",
+      "name": "Household supplies",
+      "category_group_id": "00000102-0000-4000-8000-000000000102",
+      "category_group_name": "Essentials",
+      "budgeted": 45000,
+      "balance": 45000,
+      "goal_type": "NEED",
+      "goal_target": 75000,
+      "goal_cadence": 1,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": false,
+      "goal_under_funded": 30000
+    },
+    {
+      "id": "00000013-0000-4000-8000-000000000013",
+      "name": "Budget buffer",
+      "category_group_id": "00000103-0000-4000-8000-000000000103",
+      "category_group_name": "Quality",
+      "budgeted": 20000,
+      "balance": 20000,
+      "goal_type": "NEED",
+      "goal_target": 30000,
+      "goal_cadence": 2,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": false,
+      "goal_under_funded": 100000
+    },
+    {
+      "id": "00000014-0000-4000-8000-000000000014",
+      "name": "Example card reserve",
+      "category_group_id": "00000106-0000-4000-8000-000000000106",
+      "category_group_name": "Cards",
+      "budgeted": 20000,
+      "balance": 20000,
+      "goal_type": null,
+      "goal_target": null,
+      "goal_cadence": null,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": false,
+      "goal_under_funded": 0
+    },
+    {
+      "id": "00000015-0000-4000-8000-000000000015",
+      "name": "Travel savings",
+      "category_group_id": "00000104-0000-4000-8000-000000000104",
+      "category_group_name": "Goals",
+      "budgeted": 800000,
+      "balance": 800000,
+      "goal_type": "TBD",
+      "goal_target": 900000,
+      "goal_cadence": 0,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": true,
+      "goal_under_funded": 100000,
+      "goal_target_date": "2027-05-20"
+    },
+    {
+      "id": "00000016-0000-4000-8000-000000000016",
+      "name": "Clothing",
+      "category_group_id": "00000104-0000-4000-8000-000000000104",
+      "category_group_name": "Goals",
+      "budgeted": 40000,
+      "balance": 40000,
+      "goal_type": "NEED",
+      "goal_target": 240000,
+      "goal_cadence": 1,
+      "goal_cadence_frequency": 3,
+      "goal_needs_whole_amount": true,
+      "goal_under_funded": 90000
+    },
+    {
+      "id": "00000017-0000-4000-8000-000000000017",
+      "name": "Excluded work expense",
+      "category_group_id": "00000105-0000-4000-8000-000000000105",
+      "category_group_name": "Work",
+      "budgeted": -999000,
+      "balance": -999000,
+      "goal_type": null,
+      "goal_target": null,
+      "goal_cadence": null,
+      "goal_cadence_frequency": 1,
+      "goal_needs_whole_amount": false,
+      "goal_under_funded": 0
+    }
+  ],
+  "accounts": [
+    {
+      "id": "00002000-0000-4000-8000-000000002000",
+      "name": "Example checking",
+      "type": "checking",
+      "on_budget": true,
+      "balance": 8000000
+    },
+    {
+      "id": "00002001-0000-4000-8000-000000002001",
+      "name": "Example credit card",
+      "type": "creditCard",
+      "on_budget": true,
+      "balance": -120000
+    }
+  ],
+  "transactions": [],
+  "obligations": [
+    {
+      "category_id": "00000020-0000-4000-8000-000000000020",
+      "due_date": "2027-04-15",
+      "amount_milliunits": 1300000
+    },
+    {
+      "category_id": "00000021-0000-4000-8000-000000000021",
+      "due_date": "2027-04-20",
+      "amount_milliunits": 210000
+    }
+  ],
+  "credit_spending_category_ids": []
+}

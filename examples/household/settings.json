@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "household_name": "Fictional demo household",
+  "timezone": "UTC",
+  "budget": {
+    "id": "00000001-0000-4000-8000-000000000001",
+    "name": "Example Budget",
+    "selection": "explicit_id_only"
+  },
+  "approval": {
+    "exact_changes_required": true,
+    "both_partners_agree": true,
+    "standing_write_authorization": false,
+    "independent_two_login_signatures_required": false,
+    "confirmation_scope": "one_explicit_joint_approval_per_exact_final_proposal",
+    "prepare_server_preview_before_final_confirmation": true,
+    "repeat_confirmation_for_unchanged_valid_approved_preview": false
+  },
+  "sources": {
+    "rules": "rules.md",
+    "history_index": "allocation-history/index.json",
+    "live_targets": "YNAB",
+    "live_balances": "YNAB"
+  },
+  "payday": {
+    "cadence": "biweekly",
+    "day": "Friday",
+    "forecast_income_is_assignable": false
+  },
+  "hierarchy": [
+    {
+      "priority": 1,
+      "action": "cover_eligible_overspending"
+    },
+    {
+      "priority": 2,
+      "action": "verify_monthly_bills_before_next_payday"
+    },
+    {
+      "priority": 3,
+      "action": "verify_annual_bills_before_next_payday"
+    },
+    {
+      "priority": 4,
+      "action": "discuss_card_gaps_and_reserves"
+    },
+    {
+      "priority": 5,
+      "action": "fund_essentials_from_live_target_semantics"
+    },
+    {
+      "priority": 6,
+      "action": "fund_required_payday_buffer"
+    },
+    {
+      "priority": 7,
+      "action": "review_all_remaining_eligible_targets"
+    }
+  ],
+  "constraints": {
+    "protect_next_14_days_bills": true,
+    "no_midcycle_allowance_reset": true,
+    "no_expected_reimbursement_as_cash": true
+  },
+  "allocation_policy": {
+    "schema_version": 2,
+    "excluded_group_ids": [
+      "00000105-0000-4000-8000-000000000105"
+    ],
+    "excluded_category_ids": [],
+    "card_category_ids": [
+      "00000014-0000-4000-8000-000000000014"
+    ],
+    "monthly_bill_group_ids": [
+      "00000100-0000-4000-8000-000000000100"
+    ],
+    "annual_bill_group_ids": [
+      "00000101-0000-4000-8000-000000000101"
+    ],
+    "weekly_topups": [],
+    "monthly_targets": [],
+    "card_floors": [
+      {
+        "category_id": "00000014-0000-4000-8000-000000000014",
+        "account_id": "00002001-0000-4000-8000-000000002001",
+        "floor_milliunits": 25000
+      }
+    ],
+    "optional_goal_caps": [],
+    "rta_category_id": "00000099-0000-4000-8000-000000000099",
+    "card_reserve_mode": "debt_capped_reviewed",
+    "target_driven_essentials": {
+      "group_ids": [
+        "00000102-0000-4000-8000-000000000102"
+      ],
+      "priority_category_ids": [
+        "00000010-0000-4000-8000-000000000010",
+        "00000011-0000-4000-8000-000000000011",
+        "00000012-0000-4000-8000-000000000012"
+      ],
+      "weekly_refill_periods": 2,
+      "buffer_category_id": "00000013-0000-4000-8000-000000000013"
+    }
+  },
+  "open_questions": []
+}
