@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+/household/
+data/
+state/
+logs/
+*.log
+*.pem
+*.key
+*credentials*.json
+.DS_Store
+Thumbs.db
